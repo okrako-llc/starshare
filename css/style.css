@@ -160,17 +160,47 @@ img { max-width: 100%; display: block; }
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
 }
-.card {
+.biz-card {
   background: #fff;
-  border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 2rem 1.8rem;
-  transition: transform 0.25s, box-shadow 0.25s;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s;
 }
-.card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
-.card-icon { font-size: 2.4rem; margin-bottom: 1rem; }
-.card h3 { color: var(--navy); font-size: 1.25rem; margin-bottom: 0.7rem; }
-.card p { color: var(--text-muted); font-size: 0.95rem; }
+.biz-card:hover { transform: translateY(-6px); }
+.biz-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.biz-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.biz-card:hover .biz-media img { transform: scale(1.06); }
+.biz-label {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1.6rem 1.4rem 1.2rem;
+  background: linear-gradient(to top, rgba(15, 27, 61, 0.88) 0%, rgba(15, 27, 61, 0.45) 55%, transparent 100%);
+  color: #fff;
+}
+.biz-en {
+  display: block;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+.biz-label h3 { font-size: 1.3rem; font-weight: 700; }
+.biz-desc {
+  padding: 1.3rem 1.4rem 1.6rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
 
 /* ===== Works ===== */
 .works {
