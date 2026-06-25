@@ -56,6 +56,7 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.02em;
 }
 .logo span { color: var(--accent); }
+.logo img { height: 28px; width: auto; display: block; }
 .nav { display: flex; align-items: center; gap: 2rem; }
 .nav a { font-size: 0.95rem; font-weight: 500; color: var(--text); transition: color 0.2s; }
 .nav a:hover { color: var(--accent-deep); }
