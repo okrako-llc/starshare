@@ -57,7 +57,7 @@ img { max-width: 100%; display: block; }
 }
 .logo span { color: var(--accent); }
 .logo img { height: 52px; width: auto; display: block; }
-.nav { display: flex; align-items: center; gap: 2rem; }
+.nav { display: flex; align-items: center; gap: 1.4rem; }
 .nav a { font-size: 0.95rem; font-weight: 500; color: var(--text); transition: color 0.2s; }
 .nav a:hover { color: var(--accent-deep); }
 .nav-cta {
@@ -233,6 +233,69 @@ img { max-width: 100%; display: block; }
 .work-body h3 { color: var(--navy); font-size: 1.1rem; margin-bottom: 0.5rem; }
 .work-body p { color: var(--text-muted); font-size: 0.92rem; }
 .note { margin-top: 1.5rem; color: var(--text-muted); font-size: 0.85rem; }
+
+/* ===== Strengths ===== */
+.strengths {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+.strength {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.8rem 1.6rem;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.strength:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.strength-no {
+  display: block;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+.strength h3 { color: var(--navy); font-size: 1.12rem; margin-bottom: 0.5rem; }
+.strength p { color: var(--text-muted); font-size: 0.92rem; }
+
+/* ===== Members ===== */
+.members-lead { color: var(--text-muted); margin-bottom: 2.5rem; max-width: 720px; }
+.members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.8rem;
+}
+.member {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+.member-photo {
+  flex: 0 0 110px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+.member-photo img { width: 100%; height: 100%; object-fit: cover; }
+.member-role {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+  background: var(--bg-alt);
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+.member-name { color: var(--navy); font-size: 1.2rem; margin-bottom: 0.5rem; }
+.member-bio { color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; }
 
 /* ===== Company Table ===== */
 .company-table {

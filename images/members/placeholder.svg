@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="メンバー写真プレースホルダー">
+  <rect width="400" height="400" fill="#e6eaf2"/>
+  <circle cx="200" cy="160" r="62" fill="#b9c2d6"/>
+  <path d="M80 360 c0-66 54-110 120-110 s120 44 120 110 z" fill="#b9c2d6"/>
+  <text x="200" y="392" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#8a93ab">PHOTO</text>
+</svg>
