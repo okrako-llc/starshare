@@ -8,4 +8,4 @@
 
 # ログ・一時ファイル
 *.log
-.cache/
+.cache/.netlify
